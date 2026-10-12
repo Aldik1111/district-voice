@@ -1,0 +1,7 @@
+# Optional local embeddings stack; the application never downloads a model at runtime.
+-r requirements.txt
+scikit-learn==1.9.1
+sentence-transformers==5.7.0
+torch==2.14.1
+transformers==5.19.0
+httpx==0.28.1

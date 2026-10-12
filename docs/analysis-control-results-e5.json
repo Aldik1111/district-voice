@@ -1,0 +1,1572 @@
+{
+  "dataset": "Independent synthetic controls A-H; not a representative accuracy benchmark",
+  "mode": "auto",
+  "total": 8,
+  "passed": 8,
+  "controls": [
+    {
+      "id": "A",
+      "title": "Разные русские формулировки одного отключения воды",
+      "records": [
+        {
+          "id": "A1",
+          "source_record_id": "A1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме третий день нет холодной воды.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "A2",
+          "source_record_id": "A2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "Холодное водоснабжение отключено, из кранов ничего не идёт.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "A1",
+            "A2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "A1": "Водоснабжение",
+          "A2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "A1",
+            "A2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "A1"
+        ],
+        "territories": {
+          "A1": "абай 15",
+          "A2": "абай 15"
+        },
+        "categories": {
+          "A1": "Водоснабжение",
+          "A2": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "A1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.8942,
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория."
+            ],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "A2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9246,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-648948376da7376e256f",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "A1",
+              "A2"
+            ],
+            "message_count": 2,
+            "source_count": 1,
+            "independent_evidence_count": 2,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Проверены все пары сообщений; минимальное сходство 0.896, порог 0.84.",
+              "Даты обращений: 2026-09-01 — 2026-09-01. Это даты сообщений, а не установленное время аварии."
+            ],
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 0.8965
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "id": "B",
+      "title": "Русский и казахский: одно отключение по одному адресу",
+      "records": [
+        {
+          "id": "B1",
+          "source_record_id": "B1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "На улице Абая 15 отключили воду.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "B2",
+          "source_record_id": "B2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "Абай көшесі 15 үйде су жоқ.",
+          "address": "Абай көшесі, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "kk"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "B1",
+            "B2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "B1": "Водоснабжение",
+          "B2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "B1",
+            "B2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "B1": "абай 15",
+          "B2": "абай 15"
+        },
+        "categories": {
+          "B1": "Водоснабжение",
+          "B2": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "B1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.8724,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "B2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.8711,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-d2186d3f21d471cc007c",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "B1",
+              "B2"
+            ],
+            "message_count": 2,
+            "source_count": 1,
+            "independent_evidence_count": 2,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Проверены все пары сообщений; минимальное сходство 0.851, порог 0.84.",
+              "Даты обращений: 2026-09-01 — 2026-09-01. Это даты сообщений, а не установленное время аварии."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 0.8508
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "id": "C",
+      "title": "Одна тема по разным адресам не доказывает одну аварию",
+      "records": [
+        {
+          "id": "C1",
+          "source_record_id": "C1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме нет холодной воды.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "C2",
+          "source_record_id": "C2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме нет холодной воды.",
+          "address": "ул. Абая, 27",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "C1": "Водоснабжение",
+          "C2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "C1",
+          "C2"
+        ],
+        "territories": {
+          "C1": "абай 15",
+          "C2": "абай 27"
+        },
+        "categories": {
+          "C1": "Водоснабжение",
+          "C2": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "C1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9057,
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория."
+            ],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "C2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9057,
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория."
+            ],
+            "territory": "абай 27",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-ab861dc170dc2e43224e",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "C1"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          },
+          {
+            "key": "case-9685eb765661ea3b95f3",
+            "category": "Водоснабжение",
+            "territory": "абай 27",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "C2"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 27.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "id": "D",
+      "title": "Вода и уличное освещение по одному адресу",
+      "records": [
+        {
+          "id": "D1",
+          "source_record_id": "D1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме отключили холодную воду.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "D2",
+          "source_record_id": "D2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "Уличные фонари не горят, во дворе совсем темно.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "D1"
+          ],
+          [
+            "D2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 2,
+        "categories": {
+          "D1": "Водоснабжение",
+          "D2": "Освещение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "D1"
+          ],
+          [
+            "D2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 2,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "D1": "абай 15",
+          "D2": "абай 15"
+        },
+        "categories": {
+          "D1": "Водоснабжение",
+          "D2": "Освещение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "D1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.8787,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "D2",
+            "category": "Освещение",
+            "proposed_category": "Освещение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9712,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-33a123e5d474e8f3495a",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "D1"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          },
+          {
+            "key": "case-2265f5336d7b6037b5b7",
+            "category": "Освещение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "D2"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Освещение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "id": "E",
+      "title": "Отключения воды с интервалом месяц: два случая, одна повторяющаяся проблема",
+      "records": [
+        {
+          "id": "E1",
+          "source_record_id": "E1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме нет воды, водоснабжение отключено.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "E2",
+          "source_record_id": "E2",
+          "source": "Синтетический контроль",
+          "date": "2026-10-01",
+          "text": "В доме снова нет воды, водоснабжение отключено.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "E1"
+          ],
+          [
+            "E2"
+          ]
+        ],
+        "recurring_problem_count": 1,
+        "categories": {
+          "E1": "Водоснабжение",
+          "E2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "E1"
+          ],
+          [
+            "E2"
+          ]
+        ],
+        "recurring_problem_count": 1,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "E1": "абай 15",
+          "E2": "абай 15"
+        },
+        "categories": {
+          "E1": "Водоснабжение",
+          "E2": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "E1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9403,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "E2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9217,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-22249aa61fd2594e5091",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "E1"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          },
+          {
+            "key": "case-713a5bb2d170c8684937",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-10-01",
+            "end_date": "2026-10-01",
+            "appeal_ids": [
+              "E2"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          }
+        ],
+        "problems": [
+          {
+            "key": "problem-b85b43f28c97dd5994f2",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-10-01",
+            "appeal_ids": [
+              "E1",
+              "E2"
+            ],
+            "message_count": 2,
+            "source_count": 1,
+            "independent_evidence_count": 2,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Проверены все пары сообщений; минимальное сходство 0.983, порог 0.84.",
+              "Даты обращений: 2026-09-01 — 2026-10-01. Это даты сообщений, а не установленное время аварии.",
+              "Связаны 2 отдельных случаев, разделённых минимум 7 днями, в пределах 90 дней. Причина повторения не установлена."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 0.9834,
+            "case_keys": [
+              "case-22249aa61fd2594e5091",
+              "case-713a5bb2d170c8684937"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "F",
+      "title": "Дословная перепубликация не становится независимым доказательством",
+      "records": [
+        {
+          "id": "F1",
+          "source_record_id": "F1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме нет холодной воды со вчерашнего дня.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "F2",
+          "source_record_id": "F2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме нет холодной воды со вчерашнего дня.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "F1",
+            "F2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "independent_evidence_count": 1,
+        "republication_required": true,
+        "categories": {
+          "F1": "Водоснабжение",
+          "F2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "F1",
+            "F2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 1,
+        "republication_required": true,
+        "uncertain_ids": [
+          "F1",
+          "F2"
+        ],
+        "territories": {
+          "F1": "абай 15",
+          "F2": "абай 15"
+        },
+        "categories": {
+          "F1": "Водоснабжение",
+          "F2": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "F1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9007,
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория."
+            ],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "F2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9007,
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория.",
+              "Возможная повторная публикация: текст совпадает; независимость свидетельства не подтверждена."
+            ],
+            "territory": "абай 15",
+            "duplicate_kind": "republication_candidate",
+            "duplicate_of": "F1",
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-31877a46609a38aa253d",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "F1",
+              "F2"
+            ],
+            "message_count": 2,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Проверены все пары сообщений; минимальное сходство 1.000, порог 0.84.",
+              "Даты обращений: 2026-09-01 — 2026-09-01. Это даты сообщений, а не установленное время аварии.",
+              "Совпадающие публикации учитываются одной условной цепочкой, а не дополнительным независимым свидетельством."
+            ],
+            "uncertainties": [
+              "Словарные признаки и модель предлагают разные категории; сохранена словарная категория.",
+              "Возможная повторная публикация: текст совпадает; независимость свидетельства не подтверждена.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "id": "G",
+      "title": "Неизвестные адреса: отдельные случаи и явная неопределённость",
+      "records": [
+        {
+          "id": "G1",
+          "source_record_id": "G1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "Нет холодной воды.",
+          "address": "неизвестно",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "G2",
+          "source_record_id": "G2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "Холодную воду отключили.",
+          "address": "",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "G1"
+          ],
+          [
+            "G2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "uncertain_ids": [
+          "G1",
+          "G2"
+        ],
+        "unknown_territory": true,
+        "categories": {
+          "G1": "Водоснабжение",
+          "G2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "G1"
+          ],
+          [
+            "G2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "G1",
+          "G2"
+        ],
+        "territories": {
+          "G1": null,
+          "G2": null
+        },
+        "categories": {
+          "G1": "Водоснабжение",
+          "G2": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "G1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9196,
+            "uncertainties": [
+              "Адрес/территория неизвестны; автоматическое объединение запрещено."
+            ],
+            "territory": null,
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "G2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.8812,
+            "uncertainties": [
+              "Адрес/территория неизвестны; автоматическое объединение запрещено."
+            ],
+            "territory": null,
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-7b778e4c1d1f33c90c61",
+            "category": "Водоснабжение",
+            "territory": null,
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "G1"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: неизвестно.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Адрес/территория неизвестны; автоматическое объединение запрещено.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          },
+          {
+            "key": "case-48c6e3d042649ef6adca",
+            "category": "Водоснабжение",
+            "territory": null,
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "G2"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: неизвестно.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Адрес/территория неизвестны; автоматическое объединение запрещено.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "id": "H",
+      "title": "Противоречащий адрес и восстановленная услуга не сливаются с отключением",
+      "records": [
+        {
+          "id": "H1",
+          "source_record_id": "H1",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "В доме на улице Абая 15 нет воды.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "H2",
+          "source_record_id": "H2",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "На улице Абая 15 водоснабжение восстановлено, вода снова есть.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        },
+        {
+          "id": "H3",
+          "source_record_id": "H3",
+          "source": "Синтетический контроль",
+          "date": "2026-09-01",
+          "text": "На улице Сейфуллина 88 нет воды, авария водоснабжения.",
+          "address": "ул. Абая, 15",
+          "privacy_status": "clear",
+          "version": 1,
+          "official_status": "Открыто",
+          "language": "ru"
+        }
+      ],
+      "expected": {
+        "case_members": [
+          [
+            "H1"
+          ],
+          [
+            "H2"
+          ],
+          [
+            "H3"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "uncertain_ids": [
+          "H3"
+        ],
+        "categories": {
+          "H1": "Водоснабжение",
+          "H2": "Водоснабжение",
+          "H3": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "H1"
+          ],
+          [
+            "H2"
+          ],
+          [
+            "H3"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 3,
+        "republication_required": false,
+        "uncertain_ids": [
+          "H2",
+          "H3"
+        ],
+        "territories": {
+          "H1": "абай 15",
+          "H2": "абай 15",
+          "H3": "абай 15"
+        },
+        "categories": {
+          "H1": "Водоснабжение",
+          "H2": "Водоснабжение",
+          "H3": "Водоснабжение"
+        }
+      },
+      "passed": true,
+      "failures": [],
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "output": {
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "results": [
+          {
+            "appeal_id": "H1",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.8979,
+            "uncertainties": [],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "analyzed",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "H2",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.871,
+            "uncertainties": [
+              "Сообщение о восстановлении: его нельзя автоматически объединять с сообщением об отсутствии услуги."
+            ],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          },
+          {
+            "appeal_id": "H3",
+            "category": "Водоснабжение",
+            "proposed_category": "Водоснабжение",
+            "classification_method": "e5_prototypes+bilingual_rules",
+            "score": 0.9167,
+            "uncertainties": [
+              "Противоречие адреса: адрес в тексте отличается от поля адреса."
+            ],
+            "territory": "абай 15",
+            "duplicate_kind": "independent",
+            "duplicate_of": null,
+            "explanations": [
+              "Категория по локальным прототипам и словарям."
+            ],
+            "status": "review_required",
+            "input_version": 1
+          }
+        ],
+        "cases": [
+          {
+            "key": "case-8bf797aa02bd65b7cbd5",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "H1"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          },
+          {
+            "key": "case-ae1a64d34d1c58553d43",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "H2"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Сообщение о восстановлении: его нельзя автоматически объединять с сообщением об отсутствии услуги.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          },
+          {
+            "key": "case-b14c45d35f5032a467ef",
+            "category": "Водоснабжение",
+            "territory": "абай 15",
+            "start_date": "2026-09-01",
+            "end_date": "2026-09-01",
+            "appeal_ids": [
+              "H3"
+            ],
+            "message_count": 1,
+            "source_count": 1,
+            "independent_evidence_count": 1,
+            "explanations": [
+              "Категория: Водоснабжение.",
+              "Территория из поля адреса: абай 15.",
+              "Сохранён отдельный случай без автоматического объединения."
+            ],
+            "uncertainties": [
+              "Противоречие адреса: адрес в тексте отличается от поля адреса.",
+              "Предложение системы; требуется решение аналитика. Независимость авторов сообщений не установлена.",
+              "Одиночное сообщение; других подтверждений в группе нет."
+            ],
+            "status": "proposed",
+            "minimum_similarity": 1
+          }
+        ],
+        "problems": []
+      }
+    }
+  ],
+  "real_model_verified": true,
+  "network_attempts": 0,
+  "elapsed_seconds": 8.7
+}

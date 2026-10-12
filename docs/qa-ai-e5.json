@@ -1,0 +1,757 @@
+{
+  "dataset": "Synthetic A-I, not a real-world accuracy benchmark",
+  "mode": "auto",
+  "network_attempts": [],
+  "total": 9,
+  "passed": 9,
+  "controls": [
+    {
+      "id": "A",
+      "title": "Разные русские формулировки одного отключения воды",
+      "expected": {
+        "case_members": [
+          [
+            "A1",
+            "A2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "A1": "Водоснабжение",
+          "A2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "A1",
+            "A2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "A1"
+        ],
+        "territories": {
+          "A2": "абай 15",
+          "A1": "абай 15"
+        },
+        "categories": {
+          "A2": "Водоснабжение",
+          "A1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "ed1d76e8-c9b8-4f43-a987-7f448fa4d759",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 1,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:26:49.517524Z",
+        "finished_at": "2026-10-12T11:27:16.934378Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "26110055-f9bc-495a-b46c-3711b889449b": "A2",
+        "7b26d520-9adf-4881-b89d-142570c782ec": "A1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "B",
+      "title": "Русский и казахский: одно отключение по одному адресу",
+      "expected": {
+        "case_members": [
+          [
+            "B1",
+            "B2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "B1": "Водоснабжение",
+          "B2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "B1",
+            "B2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "B1": "абай 15",
+          "B2": "абай 15"
+        },
+        "categories": {
+          "B1": "Водоснабжение",
+          "B2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "f0d78889-f923-4c05-90fb-2a0d5c64633e",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:18.661745Z",
+        "finished_at": "2026-10-12T11:27:19.026053Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "5ead8926-40e0-42d6-be4c-bf94fb8318a0": "B1",
+        "7a40ccd9-38e0-4018-8d6b-42ce378ec2fd": "B2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "C",
+      "title": "Одна тема по разным адресам не доказывает одну аварию",
+      "expected": {
+        "case_members": [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "C1": "Водоснабжение",
+          "C2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "C1",
+          "C2"
+        ],
+        "territories": {
+          "C2": "абай 27",
+          "C1": "абай 15"
+        },
+        "categories": {
+          "C2": "Водоснабжение",
+          "C1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "4bbde473-8d3b-4850-86f1-aee00b25dea5",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 2,
+        "case_count": 2,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:20.248780Z",
+        "finished_at": "2026-10-12T11:27:20.618550Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "4d11ae68-ae55-4bd1-9046-ebc257ca8fad": "C2",
+        "6f2697ca-b102-431c-a07d-052e419a7b67": "C1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "D",
+      "title": "Вода и уличное освещение по одному адресу",
+      "expected": {
+        "case_members": [
+          [
+            "D1"
+          ],
+          [
+            "D2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 2,
+        "categories": {
+          "D1": "Водоснабжение",
+          "D2": "Освещение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "D1"
+          ],
+          [
+            "D2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 2,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "D2": "абай 15",
+          "D1": "абай 15"
+        },
+        "categories": {
+          "D2": "Освещение",
+          "D1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "82efa813-1b5e-43f0-9932-d41384adf42e",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 2,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:22.167353Z",
+        "finished_at": "2026-10-12T11:27:22.514929Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "34ea6ce5-d803-47e3-9794-29bfbb655c36": "D2",
+        "ba1691cc-85dd-4edd-8aa8-9e1a6c950713": "D1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "E",
+      "title": "Отключения воды с интервалом месяц: два случая, одна повторяющаяся проблема",
+      "expected": {
+        "case_members": [
+          [
+            "E1"
+          ],
+          [
+            "E2"
+          ]
+        ],
+        "recurring_problem_count": 1,
+        "categories": {
+          "E1": "Водоснабжение",
+          "E2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "E1"
+          ],
+          [
+            "E2"
+          ]
+        ],
+        "recurring_problem_count": 1,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "E1": "абай 15",
+          "E2": "абай 15"
+        },
+        "categories": {
+          "E1": "Водоснабжение",
+          "E2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "ebec68d2-89f8-4120-af7b-cef426f4431c",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 2,
+        "problem_count": 1,
+        "created_at": "2026-10-12T11:27:23.528540Z",
+        "finished_at": "2026-10-12T11:27:23.888417Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "186a9d9d-b5f9-4d80-bdbe-463f9d04894a": "E1",
+        "c3f8893c-ff02-421c-90c6-d084e36aaf37": "E2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "F",
+      "title": "Дословная перепубликация не становится независимым доказательством",
+      "expected": {
+        "case_members": [
+          [
+            "F1",
+            "F2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "independent_evidence_count": 1,
+        "republication_required": true,
+        "categories": {
+          "F1": "Водоснабжение",
+          "F2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "F1",
+            "F2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 1,
+        "republication_required": true,
+        "uncertain_ids": [
+          "F1",
+          "F2"
+        ],
+        "territories": {
+          "F2": "абай 15",
+          "F1": "абай 15"
+        },
+        "categories": {
+          "F2": "Водоснабжение",
+          "F1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "c92b3923-fd07-4eb5-a695-5530f37558db",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 2,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:25.565191Z",
+        "finished_at": "2026-10-12T11:27:25.920193Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "5b9d65c8-4dac-473d-8dbb-92104771fc3b": "F2",
+        "9de728d3-37ed-4894-ac63-e9c7c84b2a2e": "F1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "G",
+      "title": "Неизвестные адреса: отдельные случаи и явная неопределённость",
+      "expected": {
+        "case_members": [
+          [
+            "G1"
+          ],
+          [
+            "G2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "uncertain_ids": [
+          "G1",
+          "G2"
+        ],
+        "unknown_territory": true,
+        "categories": {
+          "G1": "Водоснабжение",
+          "G2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "G1"
+          ],
+          [
+            "G2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "G1",
+          "G2"
+        ],
+        "territories": {
+          "G1": null,
+          "G2": null
+        },
+        "categories": {
+          "G1": "Водоснабжение",
+          "G2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "8bc7a8da-fa9e-4f79-8dc6-d792f60617ac",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 2,
+        "case_count": 2,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:26.805166Z",
+        "finished_at": "2026-10-12T11:27:27.155542Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "50210ca1-3761-438f-8238-eec253b7cdd5": "G1",
+        "b193833f-3c5a-4089-ba2c-c91fbf36dff6": "G2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "H",
+      "title": "Противоречащий адрес и восстановленная услуга не сливаются с отключением",
+      "expected": {
+        "case_members": [
+          [
+            "H1"
+          ],
+          [
+            "H2"
+          ],
+          [
+            "H3"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "uncertain_ids": [
+          "H3"
+        ],
+        "categories": {
+          "H1": "Водоснабжение",
+          "H2": "Водоснабжение",
+          "H3": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "H1"
+          ],
+          [
+            "H2"
+          ],
+          [
+            "H3"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 3,
+        "republication_required": false,
+        "uncertain_ids": [
+          "H2",
+          "H3"
+        ],
+        "territories": {
+          "H2": "абай 15",
+          "H1": "абай 15",
+          "H3": "абай 15"
+        },
+        "categories": {
+          "H2": "Водоснабжение",
+          "H1": "Водоснабжение",
+          "H3": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "ce0e1087-cb78-4f24-82d5-aa2457513402",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 3,
+        "analyzed": 3,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 2,
+        "case_count": 3,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:28.469655Z",
+        "finished_at": "2026-10-12T11:27:28.847488Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "77a5b7a1-14e9-4639-aeec-119cc27572c8": "H2",
+        "8572d50e-ca73-42f7-9ecd-0a96df2fc4b0": "H1",
+        "e68787fc-cdd8-4ee0-bc14-17d58dd456df": "H3"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "I",
+      "title": "Смешанный русский и казахский текст",
+      "expected": {
+        "case_members": [
+          [
+            "I1",
+            "I2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "I1": "Водоснабжение",
+          "I2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "I1",
+            "I2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "I1": "абай 15",
+          "I2": "абай 15"
+        },
+        "categories": {
+          "I1": "Водоснабжение",
+          "I2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "b1eac060-b71a-4db9-a343-efa4737b0d40",
+        "status": "completed",
+        "mode": "auto",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "multilingual-e5-small",
+          "label": "Multilingual E5 · локальные embeddings",
+          "semantic": true,
+          "model_id": "intfloat/multilingual-e5-small",
+          "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+          "fallback_reason": null,
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.84,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:27:29.762657Z",
+        "finished_at": "2026-10-12T11:27:30.118115Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "5fc2a778-f8dd-4659-b893-59e054b82e09": "I1",
+        "6631bba4-afc1-44ea-a0a8-e78a8ae613f3": "I2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    }
+  ]
+}

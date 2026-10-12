@@ -1,0 +1,872 @@
+{
+  "notice": "Синтетическая контрольная выборка, не оценка точности на реальных данных. Эталон создан до запуска.",
+  "run": {
+    "id": "b6dd0c7c-8501-40ad-bf8f-2e5f5990bb6e",
+    "status": "completed",
+    "mode": "auto",
+    "rerun_of": null,
+    "algorithm": {
+      "name": "multilingual-e5-small",
+      "label": "Multilingual E5 · локальные embeddings",
+      "semantic": true,
+      "model_id": "intfloat/multilingual-e5-small",
+      "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "fallback_reason": null,
+      "available": true,
+      "case_window_days": 3,
+      "recurrence_min_days": 7,
+      "recurrence_max_days": 90,
+      "similarity_threshold": 0.84,
+      "max_appeals": 500,
+      "score_is_probability": false
+    },
+    "total": 186,
+    "analyzed": 186,
+    "blocked": 0,
+    "error_count": 0,
+    "errors": [],
+    "uncertainties_count": 45,
+    "case_count": 43,
+    "problem_count": 1,
+    "created_at": "2026-10-12T10:20:04.475843Z",
+    "finished_at": "2026-10-12T10:20:32.432064Z",
+    "stale": false
+  },
+  "expected_case_count": 23,
+  "actual_synthetic_case_count": 34,
+  "true_positive_pairs": 737,
+  "false_positive_pairs": 14,
+  "false_negative_pairs": 475,
+  "expected_cases": {
+    "water-main": [
+      "SYN-001",
+      "SYN-002",
+      "SYN-003",
+      "SYN-004",
+      "SYN-005",
+      "SYN-006",
+      "SYN-007",
+      "SYN-008",
+      "SYN-009",
+      "SYN-010",
+      "SYN-011",
+      "SYN-012",
+      "SYN-013",
+      "SYN-014",
+      "SYN-015",
+      "SYN-016",
+      "SYN-017",
+      "SYN-018",
+      "SYN-019",
+      "SYN-020",
+      "SYN-022",
+      "SYN-023",
+      "SYN-024"
+    ],
+    "water-workshop": [
+      "SYN-021"
+    ],
+    "power-1": [
+      "SYN-025",
+      "SYN-026",
+      "SYN-027",
+      "SYN-028",
+      "SYN-029",
+      "SYN-030",
+      "SYN-031",
+      "SYN-032",
+      "SYN-033",
+      "SYN-034",
+      "SYN-035",
+      "SYN-036",
+      "SYN-037",
+      "SYN-038"
+    ],
+    "power-2": [
+      "SYN-039",
+      "SYN-040",
+      "SYN-041",
+      "SYN-042",
+      "SYN-043",
+      "SYN-044",
+      "SYN-045",
+      "SYN-046",
+      "SYN-047",
+      "SYN-048",
+      "SYN-049",
+      "SYN-050",
+      "SYN-051",
+      "SYN-052"
+    ],
+    "power-3": [
+      "SYN-053",
+      "SYN-054",
+      "SYN-055",
+      "SYN-056",
+      "SYN-057",
+      "SYN-058",
+      "SYN-059",
+      "SYN-060",
+      "SYN-061",
+      "SYN-062",
+      "SYN-063",
+      "SYN-064",
+      "SYN-065",
+      "SYN-066"
+    ],
+    "streetlights": [
+      "SYN-067",
+      "SYN-068",
+      "SYN-069",
+      "SYN-070",
+      "SYN-071",
+      "SYN-072",
+      "SYN-073",
+      "SYN-074",
+      "SYN-075",
+      "SYN-076",
+      "SYN-077",
+      "SYN-078",
+      "SYN-079",
+      "SYN-080",
+      "SYN-081",
+      "SYN-082",
+      "SYN-083",
+      "SYN-084",
+      "SYN-085",
+      "SYN-086"
+    ],
+    "potholes": [
+      "SYN-087",
+      "SYN-088",
+      "SYN-089",
+      "SYN-090",
+      "SYN-091",
+      "SYN-092",
+      "SYN-093",
+      "SYN-094",
+      "SYN-095",
+      "SYN-096",
+      "SYN-097",
+      "SYN-098",
+      "SYN-099",
+      "SYN-100",
+      "SYN-101",
+      "SYN-102",
+      "SYN-103",
+      "SYN-104"
+    ],
+    "waste": [
+      "SYN-105",
+      "SYN-106",
+      "SYN-107",
+      "SYN-108",
+      "SYN-109",
+      "SYN-110",
+      "SYN-111",
+      "SYN-112",
+      "SYN-113",
+      "SYN-114",
+      "SYN-115",
+      "SYN-116",
+      "SYN-117",
+      "SYN-118",
+      "SYN-119",
+      "SYN-120",
+      "SYN-121",
+      "SYN-122"
+    ],
+    "water-other-address": [
+      "SYN-123",
+      "SYN-124",
+      "SYN-125",
+      "SYN-126",
+      "SYN-127",
+      "SYN-128",
+      "SYN-129",
+      "SYN-130",
+      "SYN-131",
+      "SYN-132",
+      "SYN-133",
+      "SYN-134",
+      "SYN-135",
+      "SYN-136"
+    ],
+    "heating": [
+      "SYN-137",
+      "SYN-138",
+      "SYN-139",
+      "SYN-140",
+      "SYN-141",
+      "SYN-142",
+      "SYN-143",
+      "SYN-144"
+    ],
+    "bus": [
+      "SYN-145",
+      "SYN-146",
+      "SYN-147",
+      "SYN-148",
+      "SYN-149",
+      "SYN-150",
+      "SYN-151",
+      "SYN-152"
+    ],
+    "playground": [
+      "SYN-153",
+      "SYN-154",
+      "SYN-155",
+      "SYN-156",
+      "SYN-157",
+      "SYN-158",
+      "SYN-159",
+      "SYN-160"
+    ],
+    "ecology": [
+      "SYN-161",
+      "SYN-162",
+      "SYN-163",
+      "SYN-164",
+      "SYN-165",
+      "SYN-166"
+    ],
+    "unknown-1": [
+      "SYN-167"
+    ],
+    "unknown-2": [
+      "SYN-168"
+    ],
+    "unknown-3": [
+      "SYN-169"
+    ],
+    "unknown-4": [
+      "SYN-170"
+    ],
+    "unknown-5": [
+      "SYN-171"
+    ],
+    "unknown-6": [
+      "SYN-172"
+    ],
+    "review-1": [
+      "SYN-173"
+    ],
+    "review-2": [
+      "SYN-174"
+    ],
+    "review-3": [
+      "SYN-175"
+    ],
+    "review-4": [
+      "SYN-176"
+    ]
+  },
+  "actual_groups": [
+    {
+      "id": "c0105bab-a3ca-42ff-b37b-86b6466ed8f6",
+      "kind": "case",
+      "category": "Электроснабжение",
+      "territory": "достық 330",
+      "source_record_ids": [
+        "SYN-175"
+      ],
+      "expected_cases": [
+        "review-3"
+      ]
+    },
+    {
+      "id": "b54cf1a4-532e-4c8e-b8ae-1a0932cd9b6f",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": null,
+      "source_record_ids": [
+        "SYN-168"
+      ],
+      "expected_cases": [
+        "unknown-2"
+      ]
+    },
+    {
+      "id": "b3193f7a-fbe6-4ae9-99ab-7cf6b2e14987",
+      "kind": "case",
+      "category": "Благоустройство",
+      "territory": "сейфуллин 990",
+      "source_record_ids": [
+        "SYN-153",
+        "SYN-155",
+        "SYN-158",
+        "SYN-156",
+        "SYN-159"
+      ],
+      "expected_cases": [
+        "playground"
+      ]
+    },
+    {
+      "id": "a3601bc8-14ff-4110-a3d1-3850a385c077",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": null,
+      "source_record_ids": [
+        "SYN-167"
+      ],
+      "expected_cases": [
+        "unknown-1"
+      ]
+    },
+    {
+      "id": "aff15e25-43ad-4175-a4e9-cb08b722a282",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": null,
+      "source_record_ids": [
+        "SYN-170"
+      ],
+      "expected_cases": [
+        "unknown-4"
+      ]
+    },
+    {
+      "id": "faf09807-0d8e-4c1f-976f-b3e41225b7de",
+      "kind": "case",
+      "category": "Общественный транспорт",
+      "territory": "ауэзов 880",
+      "source_record_ids": [
+        "SYN-149"
+      ],
+      "expected_cases": [
+        "bus"
+      ]
+    },
+    {
+      "id": "b8f122f6-d215-44d4-9445-3c8210c6b819",
+      "kind": "case",
+      "category": "Дороги",
+      "territory": "ауэзов 440",
+      "source_record_ids": [
+        "SYN-088",
+        "SYN-100",
+        "SYN-094"
+      ],
+      "expected_cases": [
+        "potholes"
+      ]
+    },
+    {
+      "id": "ba39dfdd-7067-4fd6-88aa-d7d27dd712bf",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": null,
+      "source_record_ids": [
+        "SYN-171"
+      ],
+      "expected_cases": [
+        "unknown-5"
+      ]
+    },
+    {
+      "id": "d59967ed-ebc6-4993-ae3b-6bc423deab9c",
+      "kind": "case",
+      "category": "Экология",
+      "territory": "достық 110",
+      "source_record_ids": [
+        "SYN-162",
+        "SYN-165"
+      ],
+      "expected_cases": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "712fd052-41d5-4fb4-91bd-1fdc5318303c",
+      "kind": "case",
+      "category": "Экология",
+      "territory": "достық 110",
+      "source_record_ids": [
+        "SYN-166",
+        "SYN-161",
+        "SYN-164",
+        "SYN-163"
+      ],
+      "expected_cases": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "c616d17f-5649-40c5-a99c-b5b9f3e26132",
+      "kind": "case",
+      "category": "Общественный транспорт",
+      "territory": "ауэзов 880",
+      "source_record_ids": [
+        "SYN-148",
+        "SYN-152",
+        "SYN-151",
+        "SYN-147",
+        "SYN-145",
+        "SYN-146"
+      ],
+      "expected_cases": [
+        "bus"
+      ]
+    },
+    {
+      "id": "2e95d188-c32c-4eb8-bdfa-63d3c1d1beab",
+      "kind": "case",
+      "category": "Вывоз мусора",
+      "territory": "абай 550",
+      "source_record_ids": [
+        "SYN-116",
+        "SYN-107",
+        "SYN-117",
+        "SYN-114",
+        "SYN-113",
+        "SYN-108",
+        "SYN-122",
+        "SYN-111",
+        "SYN-120",
+        "SYN-110",
+        "SYN-105",
+        "SYN-119"
+      ],
+      "expected_cases": [
+        "waste"
+      ]
+    },
+    {
+      "id": "b008eb8a-ca73-499c-b6e8-8a55a1917aa6",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": "абай 150",
+      "source_record_ids": [
+        "SYN-016",
+        "SYN-019",
+        "SYN-022",
+        "SYN-013",
+        "SYN-018",
+        "SYN-021",
+        "SYN-004",
+        "SYN-010",
+        "SYN-024",
+        "SYN-012",
+        "SYN-006",
+        "SYN-009",
+        "SYN-003",
+        "SYN-007",
+        "SYN-015"
+      ],
+      "expected_cases": [
+        "water-main",
+        "water-workshop"
+      ]
+    },
+    {
+      "id": "c2456dc1-1ce3-4419-ae28-0187ce4d8b97",
+      "kind": "case",
+      "category": "Дороги",
+      "territory": "ауэзов 440",
+      "source_record_ids": [
+        "SYN-087",
+        "SYN-090",
+        "SYN-104",
+        "SYN-092",
+        "SYN-099",
+        "SYN-102",
+        "SYN-093",
+        "SYN-101",
+        "SYN-096",
+        "SYN-095",
+        "SYN-089",
+        "SYN-098"
+      ],
+      "expected_cases": [
+        "potholes"
+      ]
+    },
+    {
+      "id": "003c599f-e716-4cc9-a75b-fd13c455a83f",
+      "kind": "case",
+      "category": "Вывоз мусора",
+      "territory": "абай 550",
+      "source_record_ids": [
+        "SYN-121",
+        "SYN-109",
+        "SYN-115"
+      ],
+      "expected_cases": [
+        "waste"
+      ]
+    },
+    {
+      "id": "64dd9012-9424-42bd-b5c8-863c8d3331d4",
+      "kind": "case",
+      "category": "Освещение",
+      "territory": "достық 330",
+      "source_record_ids": [
+        "SYN-076",
+        "SYN-078",
+        "SYN-072",
+        "SYN-070",
+        "SYN-084",
+        "SYN-075",
+        "SYN-082",
+        "SYN-069",
+        "SYN-073",
+        "SYN-081",
+        "SYN-079",
+        "SYN-067",
+        "SYN-085"
+      ],
+      "expected_cases": [
+        "streetlights"
+      ]
+    },
+    {
+      "id": "f69f3df9-89fb-430d-9d4d-4d917d9f5e3b",
+      "kind": "case",
+      "category": "Вывоз мусора",
+      "territory": "абай 550",
+      "source_record_ids": [
+        "SYN-112",
+        "SYN-106",
+        "SYN-118"
+      ],
+      "expected_cases": [
+        "waste"
+      ]
+    },
+    {
+      "id": "5419d31b-d503-4aa5-b689-49d79587dfee",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": "абай 150",
+      "source_record_ids": [
+        "SYN-173"
+      ],
+      "expected_cases": [
+        "review-1"
+      ]
+    },
+    {
+      "id": "8982c98b-3d51-4b4d-88fe-8258c4e97eec",
+      "kind": "case",
+      "category": "Электроснабжение",
+      "territory": "сейфуллин 220",
+      "source_record_ids": [
+        "SYN-176"
+      ],
+      "expected_cases": [
+        "review-4"
+      ]
+    },
+    {
+      "id": "01da7c00-0663-4247-a8f9-a8993ed4832d",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": "абай 660",
+      "source_record_ids": [
+        "SYN-127",
+        "SYN-133",
+        "SYN-136",
+        "SYN-124",
+        "SYN-130"
+      ],
+      "expected_cases": [
+        "water-other-address"
+      ]
+    },
+    {
+      "id": "ff30598a-1a4c-4fd3-aded-5ff910be01b7",
+      "kind": "case",
+      "category": "Электроснабжение",
+      "territory": "сейфуллин 220",
+      "source_record_ids": [
+        "SYN-049",
+        "SYN-042",
+        "SYN-044",
+        "SYN-046",
+        "SYN-051",
+        "SYN-041",
+        "SYN-047",
+        "SYN-052",
+        "SYN-043",
+        "SYN-048",
+        "SYN-050",
+        "SYN-040",
+        "SYN-045",
+        "SYN-039"
+      ],
+      "expected_cases": [
+        "power-2"
+      ]
+    },
+    {
+      "id": "5d0b33c6-10a3-483b-b007-d972049b0d1f",
+      "kind": "case",
+      "category": "Дороги",
+      "territory": "ауэзов 440",
+      "source_record_ids": [
+        "SYN-103",
+        "SYN-097",
+        "SYN-091"
+      ],
+      "expected_cases": [
+        "potholes"
+      ]
+    },
+    {
+      "id": "4d68e717-7ee8-4465-b081-0b5feade77cd",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": "абай 150",
+      "source_record_ids": [
+        "SYN-001",
+        "SYN-017",
+        "SYN-011",
+        "SYN-023",
+        "SYN-005",
+        "SYN-002",
+        "SYN-008",
+        "SYN-014",
+        "SYN-020"
+      ],
+      "expected_cases": [
+        "water-main"
+      ]
+    },
+    {
+      "id": "22017a3c-787c-4def-aae1-32abc6ea0f10",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": "абай 150",
+      "source_record_ids": [
+        "SYN-174"
+      ],
+      "expected_cases": [
+        "review-2"
+      ]
+    },
+    {
+      "id": "f592c6ab-84ed-404e-88c9-47f6c4f440f6",
+      "kind": "case",
+      "category": "Отопление",
+      "territory": "достық 770",
+      "source_record_ids": [
+        "SYN-139",
+        "SYN-143",
+        "SYN-137",
+        "SYN-142",
+        "SYN-140"
+      ],
+      "expected_cases": [
+        "heating"
+      ]
+    },
+    {
+      "id": "f3d62dec-8b68-4e08-8423-d23270964f53",
+      "kind": "case",
+      "category": "Благоустройство",
+      "territory": "сейфуллин 990",
+      "source_record_ids": [
+        "SYN-154",
+        "SYN-160",
+        "SYN-157"
+      ],
+      "expected_cases": [
+        "playground"
+      ]
+    },
+    {
+      "id": "03ad053e-6689-4665-b83f-051e6b7cd3a7",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": null,
+      "source_record_ids": [
+        "SYN-172"
+      ],
+      "expected_cases": [
+        "unknown-6"
+      ]
+    },
+    {
+      "id": "1aba1c64-e037-4fbc-b1d0-9e9f64691d7d",
+      "kind": "case",
+      "category": "Отопление",
+      "territory": "достық 770",
+      "source_record_ids": [
+        "SYN-144",
+        "SYN-141",
+        "SYN-138"
+      ],
+      "expected_cases": [
+        "heating"
+      ]
+    },
+    {
+      "id": "664708c9-b0f8-4584-b802-13808bbae166",
+      "kind": "case",
+      "category": "Общественный транспорт",
+      "territory": "ауэзов 880",
+      "source_record_ids": [
+        "SYN-150"
+      ],
+      "expected_cases": [
+        "bus"
+      ]
+    },
+    {
+      "id": "69a40388-743e-44ef-a7d5-0c98f5c1d9dd",
+      "kind": "case",
+      "category": "Освещение",
+      "territory": "достық 330",
+      "source_record_ids": [
+        "SYN-080",
+        "SYN-077",
+        "SYN-068",
+        "SYN-083",
+        "SYN-086",
+        "SYN-074",
+        "SYN-071"
+      ],
+      "expected_cases": [
+        "streetlights"
+      ]
+    },
+    {
+      "id": "f8a4be6f-7d0a-4035-8f38-9981cf0499aa",
+      "kind": "case",
+      "category": "Электроснабжение",
+      "territory": "сейфуллин 220",
+      "source_record_ids": [
+        "SYN-055",
+        "SYN-054",
+        "SYN-064",
+        "SYN-057",
+        "SYN-058",
+        "SYN-053",
+        "SYN-065",
+        "SYN-059",
+        "SYN-063",
+        "SYN-066",
+        "SYN-060",
+        "SYN-062",
+        "SYN-061",
+        "SYN-056"
+      ],
+      "expected_cases": [
+        "power-3"
+      ]
+    },
+    {
+      "id": "4445b355-5189-4f32-a6fa-973394c3df91",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": null,
+      "source_record_ids": [
+        "SYN-169"
+      ],
+      "expected_cases": [
+        "unknown-3"
+      ]
+    },
+    {
+      "id": "325f3b8d-42d1-410b-bc4f-c77f66846253",
+      "kind": "case",
+      "category": "Водоснабжение",
+      "territory": "абай 660",
+      "source_record_ids": [
+        "SYN-128",
+        "SYN-126",
+        "SYN-129",
+        "SYN-134",
+        "SYN-125",
+        "SYN-123",
+        "SYN-135",
+        "SYN-131",
+        "SYN-132"
+      ],
+      "expected_cases": [
+        "water-other-address"
+      ]
+    },
+    {
+      "id": "d1f2ea40-efc6-4985-b4f5-e4db588ebf48",
+      "kind": "case",
+      "category": "Электроснабжение",
+      "territory": "сейфуллин 220",
+      "source_record_ids": [
+        "SYN-032",
+        "SYN-034",
+        "SYN-033",
+        "SYN-025",
+        "SYN-038",
+        "SYN-037",
+        "SYN-036",
+        "SYN-030",
+        "SYN-028",
+        "SYN-029",
+        "SYN-035",
+        "SYN-031",
+        "SYN-026",
+        "SYN-027"
+      ],
+      "expected_cases": [
+        "power-1"
+      ]
+    },
+    {
+      "id": "88014441-4d12-4850-9ed0-03ecee642b6d",
+      "kind": "problem",
+      "category": "Электроснабжение",
+      "territory": "сейфуллин 220",
+      "source_record_ids": [
+        "SYN-055",
+        "SYN-054",
+        "SYN-064",
+        "SYN-049",
+        "SYN-057",
+        "SYN-032",
+        "SYN-042",
+        "SYN-034",
+        "SYN-033",
+        "SYN-044",
+        "SYN-046",
+        "SYN-058",
+        "SYN-053",
+        "SYN-065",
+        "SYN-051",
+        "SYN-025",
+        "SYN-041",
+        "SYN-038",
+        "SYN-047",
+        "SYN-037",
+        "SYN-036",
+        "SYN-030",
+        "SYN-028",
+        "SYN-059",
+        "SYN-052",
+        "SYN-029",
+        "SYN-043",
+        "SYN-048",
+        "SYN-050",
+        "SYN-035",
+        "SYN-040",
+        "SYN-031",
+        "SYN-045",
+        "SYN-026",
+        "SYN-039",
+        "SYN-063",
+        "SYN-066",
+        "SYN-060",
+        "SYN-027",
+        "SYN-062",
+        "SYN-061",
+        "SYN-056"
+      ],
+      "expected_cases": [
+        "power-1",
+        "power-2",
+        "power-3"
+      ]
+    }
+  ]
+}

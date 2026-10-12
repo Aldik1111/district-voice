@@ -1,0 +1,2056 @@
+{
+  "synthetic": true,
+  "description": "Все сообщения, адреса и события вымышлены. Эталон задан авторами сценариев до запуска алгоритма; это контрольные данные, не оценка качества на реальных обращениях.",
+  "expected_import": {
+    "rows": 180,
+    "accepted": 176,
+    "rejected": 2,
+    "duplicates": 2,
+    "conflicts": 0
+  },
+  "cases": {
+    "water-main": [
+      "SYN-001",
+      "SYN-002",
+      "SYN-003",
+      "SYN-004",
+      "SYN-005",
+      "SYN-006",
+      "SYN-007",
+      "SYN-008",
+      "SYN-009",
+      "SYN-010",
+      "SYN-011",
+      "SYN-012",
+      "SYN-013",
+      "SYN-014",
+      "SYN-015",
+      "SYN-016",
+      "SYN-017",
+      "SYN-018",
+      "SYN-019",
+      "SYN-020",
+      "SYN-022",
+      "SYN-023",
+      "SYN-024"
+    ],
+    "water-workshop": [
+      "SYN-021"
+    ],
+    "power-1": [
+      "SYN-025",
+      "SYN-026",
+      "SYN-027",
+      "SYN-028",
+      "SYN-029",
+      "SYN-030",
+      "SYN-031",
+      "SYN-032",
+      "SYN-033",
+      "SYN-034",
+      "SYN-035",
+      "SYN-036",
+      "SYN-037",
+      "SYN-038"
+    ],
+    "power-2": [
+      "SYN-039",
+      "SYN-040",
+      "SYN-041",
+      "SYN-042",
+      "SYN-043",
+      "SYN-044",
+      "SYN-045",
+      "SYN-046",
+      "SYN-047",
+      "SYN-048",
+      "SYN-049",
+      "SYN-050",
+      "SYN-051",
+      "SYN-052"
+    ],
+    "power-3": [
+      "SYN-053",
+      "SYN-054",
+      "SYN-055",
+      "SYN-056",
+      "SYN-057",
+      "SYN-058",
+      "SYN-059",
+      "SYN-060",
+      "SYN-061",
+      "SYN-062",
+      "SYN-063",
+      "SYN-064",
+      "SYN-065",
+      "SYN-066"
+    ],
+    "streetlights": [
+      "SYN-067",
+      "SYN-068",
+      "SYN-069",
+      "SYN-070",
+      "SYN-071",
+      "SYN-072",
+      "SYN-073",
+      "SYN-074",
+      "SYN-075",
+      "SYN-076",
+      "SYN-077",
+      "SYN-078",
+      "SYN-079",
+      "SYN-080",
+      "SYN-081",
+      "SYN-082",
+      "SYN-083",
+      "SYN-084",
+      "SYN-085",
+      "SYN-086"
+    ],
+    "potholes": [
+      "SYN-087",
+      "SYN-088",
+      "SYN-089",
+      "SYN-090",
+      "SYN-091",
+      "SYN-092",
+      "SYN-093",
+      "SYN-094",
+      "SYN-095",
+      "SYN-096",
+      "SYN-097",
+      "SYN-098",
+      "SYN-099",
+      "SYN-100",
+      "SYN-101",
+      "SYN-102",
+      "SYN-103",
+      "SYN-104"
+    ],
+    "waste": [
+      "SYN-105",
+      "SYN-106",
+      "SYN-107",
+      "SYN-108",
+      "SYN-109",
+      "SYN-110",
+      "SYN-111",
+      "SYN-112",
+      "SYN-113",
+      "SYN-114",
+      "SYN-115",
+      "SYN-116",
+      "SYN-117",
+      "SYN-118",
+      "SYN-119",
+      "SYN-120",
+      "SYN-121",
+      "SYN-122"
+    ],
+    "water-other-address": [
+      "SYN-123",
+      "SYN-124",
+      "SYN-125",
+      "SYN-126",
+      "SYN-127",
+      "SYN-128",
+      "SYN-129",
+      "SYN-130",
+      "SYN-131",
+      "SYN-132",
+      "SYN-133",
+      "SYN-134",
+      "SYN-135",
+      "SYN-136"
+    ],
+    "heating": [
+      "SYN-137",
+      "SYN-138",
+      "SYN-139",
+      "SYN-140",
+      "SYN-141",
+      "SYN-142",
+      "SYN-143",
+      "SYN-144"
+    ],
+    "bus": [
+      "SYN-145",
+      "SYN-146",
+      "SYN-147",
+      "SYN-148",
+      "SYN-149",
+      "SYN-150",
+      "SYN-151",
+      "SYN-152"
+    ],
+    "playground": [
+      "SYN-153",
+      "SYN-154",
+      "SYN-155",
+      "SYN-156",
+      "SYN-157",
+      "SYN-158",
+      "SYN-159",
+      "SYN-160"
+    ],
+    "ecology": [
+      "SYN-161",
+      "SYN-162",
+      "SYN-163",
+      "SYN-164",
+      "SYN-165",
+      "SYN-166"
+    ],
+    "unknown-1": [
+      "SYN-167"
+    ],
+    "unknown-2": [
+      "SYN-168"
+    ],
+    "unknown-3": [
+      "SYN-169"
+    ],
+    "unknown-4": [
+      "SYN-170"
+    ],
+    "unknown-5": [
+      "SYN-171"
+    ],
+    "unknown-6": [
+      "SYN-172"
+    ],
+    "review-1": [
+      "SYN-173"
+    ],
+    "review-2": [
+      "SYN-174"
+    ],
+    "review-3": [
+      "SYN-175"
+    ],
+    "review-4": [
+      "SYN-176"
+    ]
+  },
+  "problems": {
+    "recurring-power": [
+      "power-1",
+      "power-2",
+      "power-3"
+    ]
+  },
+  "manual_review_target": {
+    "record": "SYN-021",
+    "reason": "Отдельный внутренний ремонт крана мастерской не является подтверждением общего отключения воды.",
+    "expected_case": "water-workshop"
+  },
+  "notes": [
+    "Шесть обращений без адреса остаются отдельными неопределёнными случаями.",
+    "Четыре противоречивые записи review-* требуют ручной проверки и не подтверждают основную группу.",
+    "Дословные копии внутри шаблонов также могут быть кандидатами в перепубликации; независимость авторов не установлена."
+  ],
+  "rows": [
+    {
+      "row": 2,
+      "source_record_id": "SYN-001",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 3,
+      "source_record_id": "SYN-002",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 4,
+      "source_record_id": "SYN-003",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 5,
+      "source_record_id": "SYN-004",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 6,
+      "source_record_id": "SYN-005",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 7,
+      "source_record_id": "SYN-006",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 8,
+      "source_record_id": "SYN-007",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 9,
+      "source_record_id": "SYN-008",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 10,
+      "source_record_id": "SYN-009",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 11,
+      "source_record_id": "SYN-010",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 12,
+      "source_record_id": "SYN-011",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 13,
+      "source_record_id": "SYN-012",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 14,
+      "source_record_id": "SYN-013",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 15,
+      "source_record_id": "SYN-014",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 16,
+      "source_record_id": "SYN-015",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 17,
+      "source_record_id": "SYN-016",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 18,
+      "source_record_id": "SYN-017",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 19,
+      "source_record_id": "SYN-018",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 20,
+      "source_record_id": "SYN-019",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 21,
+      "source_record_id": "SYN-020",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 22,
+      "source_record_id": "SYN-021",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-workshop",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 23,
+      "source_record_id": "SYN-022",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": "SYN-001"
+    },
+    {
+      "row": 24,
+      "source_record_id": "SYN-023",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": "SYN-002"
+    },
+    {
+      "row": 25,
+      "source_record_id": "SYN-024",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": "SYN-003"
+    },
+    {
+      "row": 26,
+      "source_record_id": "SYN-025",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 27,
+      "source_record_id": "SYN-026",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 28,
+      "source_record_id": "SYN-027",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 29,
+      "source_record_id": "SYN-028",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 30,
+      "source_record_id": "SYN-029",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 31,
+      "source_record_id": "SYN-030",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 32,
+      "source_record_id": "SYN-031",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 33,
+      "source_record_id": "SYN-032",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 34,
+      "source_record_id": "SYN-033",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 35,
+      "source_record_id": "SYN-034",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 36,
+      "source_record_id": "SYN-035",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 37,
+      "source_record_id": "SYN-036",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 38,
+      "source_record_id": "SYN-037",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 39,
+      "source_record_id": "SYN-038",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 40,
+      "source_record_id": "SYN-039",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 41,
+      "source_record_id": "SYN-040",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 42,
+      "source_record_id": "SYN-041",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 43,
+      "source_record_id": "SYN-042",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 44,
+      "source_record_id": "SYN-043",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 45,
+      "source_record_id": "SYN-044",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 46,
+      "source_record_id": "SYN-045",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 47,
+      "source_record_id": "SYN-046",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 48,
+      "source_record_id": "SYN-047",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 49,
+      "source_record_id": "SYN-048",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 50,
+      "source_record_id": "SYN-049",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 51,
+      "source_record_id": "SYN-050",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 52,
+      "source_record_id": "SYN-051",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 53,
+      "source_record_id": "SYN-052",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-2",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 54,
+      "source_record_id": "SYN-053",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 55,
+      "source_record_id": "SYN-054",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 56,
+      "source_record_id": "SYN-055",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 57,
+      "source_record_id": "SYN-056",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 58,
+      "source_record_id": "SYN-057",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 59,
+      "source_record_id": "SYN-058",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 60,
+      "source_record_id": "SYN-059",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 61,
+      "source_record_id": "SYN-060",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 62,
+      "source_record_id": "SYN-061",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 63,
+      "source_record_id": "SYN-062",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 64,
+      "source_record_id": "SYN-063",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 65,
+      "source_record_id": "SYN-064",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 66,
+      "source_record_id": "SYN-065",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 67,
+      "source_record_id": "SYN-066",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "power-3",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 68,
+      "source_record_id": "SYN-067",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 69,
+      "source_record_id": "SYN-068",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 70,
+      "source_record_id": "SYN-069",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 71,
+      "source_record_id": "SYN-070",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 72,
+      "source_record_id": "SYN-071",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 73,
+      "source_record_id": "SYN-072",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 74,
+      "source_record_id": "SYN-073",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 75,
+      "source_record_id": "SYN-074",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 76,
+      "source_record_id": "SYN-075",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 77,
+      "source_record_id": "SYN-076",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 78,
+      "source_record_id": "SYN-077",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 79,
+      "source_record_id": "SYN-078",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 80,
+      "source_record_id": "SYN-079",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 81,
+      "source_record_id": "SYN-080",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 82,
+      "source_record_id": "SYN-081",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 83,
+      "source_record_id": "SYN-082",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 84,
+      "source_record_id": "SYN-083",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 85,
+      "source_record_id": "SYN-084",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 86,
+      "source_record_id": "SYN-085",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 87,
+      "source_record_id": "SYN-086",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "streetlights",
+      "problem": null,
+      "category": "Освещение",
+      "republication_of": null
+    },
+    {
+      "row": 88,
+      "source_record_id": "SYN-087",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 89,
+      "source_record_id": "SYN-088",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 90,
+      "source_record_id": "SYN-089",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 91,
+      "source_record_id": "SYN-090",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 92,
+      "source_record_id": "SYN-091",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 93,
+      "source_record_id": "SYN-092",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 94,
+      "source_record_id": "SYN-093",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 95,
+      "source_record_id": "SYN-094",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 96,
+      "source_record_id": "SYN-095",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 97,
+      "source_record_id": "SYN-096",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 98,
+      "source_record_id": "SYN-097",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 99,
+      "source_record_id": "SYN-098",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 100,
+      "source_record_id": "SYN-099",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 101,
+      "source_record_id": "SYN-100",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 102,
+      "source_record_id": "SYN-101",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 103,
+      "source_record_id": "SYN-102",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 104,
+      "source_record_id": "SYN-103",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 105,
+      "source_record_id": "SYN-104",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "potholes",
+      "problem": null,
+      "category": "Дороги",
+      "republication_of": null
+    },
+    {
+      "row": 106,
+      "source_record_id": "SYN-105",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 107,
+      "source_record_id": "SYN-106",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 108,
+      "source_record_id": "SYN-107",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 109,
+      "source_record_id": "SYN-108",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 110,
+      "source_record_id": "SYN-109",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 111,
+      "source_record_id": "SYN-110",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 112,
+      "source_record_id": "SYN-111",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 113,
+      "source_record_id": "SYN-112",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 114,
+      "source_record_id": "SYN-113",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 115,
+      "source_record_id": "SYN-114",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 116,
+      "source_record_id": "SYN-115",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 117,
+      "source_record_id": "SYN-116",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 118,
+      "source_record_id": "SYN-117",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 119,
+      "source_record_id": "SYN-118",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 120,
+      "source_record_id": "SYN-119",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 121,
+      "source_record_id": "SYN-120",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 122,
+      "source_record_id": "SYN-121",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 123,
+      "source_record_id": "SYN-122",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "waste",
+      "problem": null,
+      "category": "Вывоз мусора",
+      "republication_of": null
+    },
+    {
+      "row": 124,
+      "source_record_id": "SYN-123",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 125,
+      "source_record_id": "SYN-124",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 126,
+      "source_record_id": "SYN-125",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 127,
+      "source_record_id": "SYN-126",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 128,
+      "source_record_id": "SYN-127",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 129,
+      "source_record_id": "SYN-128",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 130,
+      "source_record_id": "SYN-129",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 131,
+      "source_record_id": "SYN-130",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 132,
+      "source_record_id": "SYN-131",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 133,
+      "source_record_id": "SYN-132",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 134,
+      "source_record_id": "SYN-133",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 135,
+      "source_record_id": "SYN-134",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 136,
+      "source_record_id": "SYN-135",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 137,
+      "source_record_id": "SYN-136",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "water-other-address",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 138,
+      "source_record_id": "SYN-137",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 139,
+      "source_record_id": "SYN-138",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 140,
+      "source_record_id": "SYN-139",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 141,
+      "source_record_id": "SYN-140",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 142,
+      "source_record_id": "SYN-141",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 143,
+      "source_record_id": "SYN-142",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 144,
+      "source_record_id": "SYN-143",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 145,
+      "source_record_id": "SYN-144",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "heating",
+      "problem": null,
+      "category": "Отопление",
+      "republication_of": null
+    },
+    {
+      "row": 146,
+      "source_record_id": "SYN-145",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 147,
+      "source_record_id": "SYN-146",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 148,
+      "source_record_id": "SYN-147",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 149,
+      "source_record_id": "SYN-148",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 150,
+      "source_record_id": "SYN-149",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 151,
+      "source_record_id": "SYN-150",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 152,
+      "source_record_id": "SYN-151",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 153,
+      "source_record_id": "SYN-152",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "bus",
+      "problem": null,
+      "category": "Общественный транспорт",
+      "republication_of": null
+    },
+    {
+      "row": 154,
+      "source_record_id": "SYN-153",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 155,
+      "source_record_id": "SYN-154",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 156,
+      "source_record_id": "SYN-155",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 157,
+      "source_record_id": "SYN-156",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 158,
+      "source_record_id": "SYN-157",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 159,
+      "source_record_id": "SYN-158",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 160,
+      "source_record_id": "SYN-159",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 161,
+      "source_record_id": "SYN-160",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "playground",
+      "problem": null,
+      "category": "Благоустройство",
+      "republication_of": null
+    },
+    {
+      "row": 162,
+      "source_record_id": "SYN-161",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "ecology",
+      "problem": null,
+      "category": "Экология",
+      "republication_of": null
+    },
+    {
+      "row": 163,
+      "source_record_id": "SYN-162",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "ecology",
+      "problem": null,
+      "category": "Экология",
+      "republication_of": null
+    },
+    {
+      "row": 164,
+      "source_record_id": "SYN-163",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "ecology",
+      "problem": null,
+      "category": "Экология",
+      "republication_of": null
+    },
+    {
+      "row": 165,
+      "source_record_id": "SYN-164",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "ecology",
+      "problem": null,
+      "category": "Экология",
+      "republication_of": null
+    },
+    {
+      "row": 166,
+      "source_record_id": "SYN-165",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "ecology",
+      "problem": null,
+      "category": "Экология",
+      "republication_of": null
+    },
+    {
+      "row": 167,
+      "source_record_id": "SYN-166",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "ecology",
+      "problem": null,
+      "category": "Экология",
+      "republication_of": null
+    },
+    {
+      "row": 168,
+      "source_record_id": "SYN-167",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "unknown-1",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 169,
+      "source_record_id": "SYN-168",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "unknown-2",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 170,
+      "source_record_id": "SYN-169",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "unknown-3",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 171,
+      "source_record_id": "SYN-170",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "unknown-4",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 172,
+      "source_record_id": "SYN-171",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "unknown-5",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 173,
+      "source_record_id": "SYN-172",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "unknown-6",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 174,
+      "source_record_id": "SYN-173",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "review-1",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 175,
+      "source_record_id": "SYN-174",
+      "source": "ДЕМО · Приёмная",
+      "import": "accepted",
+      "case": "review-2",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 176,
+      "source_record_id": "SYN-175",
+      "source": "ДЕМО · Портал",
+      "import": "accepted",
+      "case": "review-3",
+      "problem": null,
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 177,
+      "source_record_id": "SYN-176",
+      "source": "ДЕМО · Открытый чат",
+      "import": "accepted",
+      "case": "review-4",
+      "problem": null,
+      "category": "Электроснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 178,
+      "source_record_id": "SYN-177",
+      "source": "ДЕМО · Приёмная",
+      "import": "invalid_date",
+      "case": null,
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 179,
+      "source_record_id": "SYN-178",
+      "source": "ДЕМО · Портал",
+      "import": "invalid_date",
+      "case": null,
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null
+    },
+    {
+      "row": 180,
+      "source_record_id": "SYN-001",
+      "source": "ДЕМО · Портал",
+      "import": "technical_duplicate",
+      "case": "water-main",
+      "problem": null,
+      "category": "Водоснабжение",
+      "republication_of": null,
+      "technical_duplicate_of": 2
+    },
+    {
+      "row": 181,
+      "source_record_id": "SYN-025",
+      "source": "ДЕМО · Портал",
+      "import": "technical_duplicate",
+      "case": "power-1",
+      "problem": "recurring-power",
+      "category": "Электроснабжение",
+      "republication_of": null,
+      "technical_duplicate_of": 26
+    }
+  ]
+}

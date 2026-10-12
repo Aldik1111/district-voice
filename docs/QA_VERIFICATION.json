@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-12",
+  "pytest": {
+    "tests": 123,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reported_seconds": 58.13,
+    "modules": {
+      "tests.test_analysis_api": 12,
+      "tests.test_analysis_categories": 20,
+      "tests.test_analysis_controls": 19,
+      "tests.test_curation_summaries": 10,
+      "tests.test_demo_dataset": 2,
+      "tests.test_imports": 33,
+      "tests.test_privacy": 12,
+      "tests.test_qa_security": 8,
+      "tests.test_workspace_api": 7
+    }
+  },
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "production_build": "PASS",
+  "pip_check": "PASS",
+  "fixed_defects": [
+    "QA-01: invalidate parent approval after related case decision",
+    "QA-02: reject XML-incompatible user input",
+    "QA-03: word boundary for document/account masking"
+  ],
+  "live": {
+    "total_appeals": 191,
+    "run": {
+      "id": "6e293b82-286e-428f-a09f-994f4a02dc79",
+      "status": "completed",
+      "mode": "auto",
+      "rerun_of": "b6dd0c7c-8501-40ad-bf8f-2e5f5990bb6e",
+      "algorithm": {
+        "name": "multilingual-e5-small",
+        "label": "Multilingual E5 · локальные embeddings",
+        "semantic": true,
+        "model_id": "intfloat/multilingual-e5-small",
+        "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "fallback_reason": null,
+        "available": true,
+        "case_window_days": 3,
+        "recurrence_min_days": 7,
+        "recurrence_max_days": 90,
+        "similarity_threshold": 0.84,
+        "max_appeals": 500,
+        "score_is_probability": false
+      },
+      "total": 191,
+      "analyzed": 191,
+      "blocked": 0,
+      "error_count": 0,
+      "errors": [],
+      "uncertainties_count": 46,
+      "case_count": 45,
+      "problem_count": 1,
+      "created_at": "2026-10-12T11:55:02.005545Z",
+      "finished_at": "2026-10-12T11:55:42.824005Z",
+      "stale": false
+    },
+    "reviewed_group": {
+      "key": "case-1059fce6bcb1d7670dd4",
+      "category": "Водоснабжение",
+      "territory": "абай 1510",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-12",
+      "message_count": 3,
+      "source_count": 2,
+      "independent_evidence_count": 3,
+      "explanations": [
+        "Текущий состав установлен вручную; подтверждающие ID, даты и источники пересчитаны из SQLite."
+      ],
+      "uncertainties": [
+        "Состав или описание изменены демо-оператором. Основание AI и сходство устарели; требуется ручная проверка."
+      ],
+      "minimum_similarity": null,
+      "sources": [
+        "ДЕМО · QA Портал",
+        "ДЕМО · QA Чат"
+      ],
+      "territories": [
+        "абай 1510"
+      ],
+      "explanation_stale": true,
+      "review_history": [
+        {
+          "action": "remove",
+          "old_value": {
+            "title": null,
+            "category": "Водоснабжение",
+            "status": "proposed",
+            "appeal_ids": [
+              "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+              "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+              "594820c7-3233-4bd5-9f20-cc627a7763c1",
+              "67422ba6-565f-4a1c-98d1-c64e4365a0a9"
+            ],
+            "case_ids": [],
+            "message_count": 4,
+            "source_count": 2,
+            "sources": null,
+            "start_date": "2026-10-12",
+            "end_date": "2026-10-12",
+            "territory": "абай 1510"
+          },
+          "new_value": {
+            "title": null,
+            "category": "Водоснабжение",
+            "status": "proposed",
+            "appeal_ids": [
+              "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+              "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+              "594820c7-3233-4bd5-9f20-cc627a7763c1"
+            ],
+            "case_ids": [],
+            "message_count": 3,
+            "source_count": 2,
+            "sources": [
+              "ДЕМО · QA Портал",
+              "ДЕМО · QA Чат"
+            ],
+            "start_date": "2026-10-12",
+            "end_date": "2026-10-12",
+            "territory": "абай 1510"
+          },
+          "previous_status": "proposed",
+          "status": "proposed",
+          "reason": "Финальный QA: исключена синтетическая перепубликация для проверки пересчёта и сохранения связей.",
+          "created_at": "2026-10-12T11:58:39.078507Z",
+          "version": 2,
+          "actor": "demo_operator"
+        },
+        {
+          "action": "edit",
+          "old_value": {
+            "title": null,
+            "category": "Водоснабжение",
+            "status": "proposed",
+            "appeal_ids": [
+              "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+              "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+              "594820c7-3233-4bd5-9f20-cc627a7763c1"
+            ],
+            "case_ids": [],
+            "message_count": 3,
+            "source_count": 2,
+            "sources": [
+              "ДЕМО · QA Портал",
+              "ДЕМО · QA Чат"
+            ],
+            "start_date": "2026-10-12",
+            "end_date": "2026-10-12",
+            "territory": "абай 1510"
+          },
+          "new_value": {
+            "title": "QA · Водоснабжение на Абая, 1510",
+            "category": "Водоснабжение",
+            "status": "proposed",
+            "appeal_ids": [
+              "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+              "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+              "594820c7-3233-4bd5-9f20-cc627a7763c1"
+            ],
+            "case_ids": [],
+            "message_count": 3,
+            "source_count": 2,
+            "sources": [
+              "ДЕМО · QA Портал",
+              "ДЕМО · QA Чат"
+            ],
+            "start_date": "2026-10-12",
+            "end_date": "2026-10-12",
+            "territory": "абай 1510"
+          },
+          "previous_status": "proposed",
+          "status": "proposed",
+          "reason": "Синтетический контроль: уточнено название по адресу подтверждающих записей.",
+          "created_at": "2026-10-12T11:59:16.601684Z",
+          "version": 3,
+          "actor": "demo_operator"
+        },
+        {
+          "action": "review",
+          "old_value": {
+            "title": "QA · Водоснабжение на Абая, 1510",
+            "category": "Водоснабжение",
+            "status": "proposed",
+            "appeal_ids": [
+              "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+              "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+              "594820c7-3233-4bd5-9f20-cc627a7763c1"
+            ],
+            "case_ids": [],
+            "message_count": 3,
+            "source_count": 2,
+            "sources": [
+              "ДЕМО · QA Портал",
+              "ДЕМО · QA Чат"
+            ],
+            "start_date": "2026-10-12",
+            "end_date": "2026-10-12",
+            "territory": "абай 1510"
+          },
+          "new_value": {
+            "title": "QA · Водоснабжение на Абая, 1510",
+            "category": "Водоснабжение",
+            "status": "confirmed",
+            "appeal_ids": [
+              "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+              "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+              "594820c7-3233-4bd5-9f20-cc627a7763c1"
+            ],
+            "case_ids": [],
+            "message_count": 3,
+            "source_count": 2,
+            "sources": [
+              "ДЕМО · QA Портал",
+              "ДЕМО · QA Чат"
+            ],
+            "start_date": "2026-10-12",
+            "end_date": "2026-10-12",
+            "territory": "абай 1510"
+          },
+          "previous_status": "proposed",
+          "status": "confirmed",
+          "reason": "Финальный QA: проверены три синтетических обращения, единые адрес и дата; причина отключения не установлена.",
+          "created_at": "2026-10-12T12:00:38.479932Z",
+          "version": 4,
+          "actor": "demo_operator"
+        }
+      ],
+      "title": "QA · Водоснабжение на Абая, 1510",
+      "id": "e359df31-0c1b-40c4-90d0-ed7a31022f1e",
+      "run_id": "6e293b82-286e-428f-a09f-994f4a02dc79",
+      "kind": "case",
+      "status": "confirmed",
+      "version": 4,
+      "appeal_ids": [
+        "517a7ee4-c5d6-45b2-991e-0e570763dad5",
+        "551647a3-1a2d-469e-879e-0993ce3dfb7f",
+        "594820c7-3233-4bd5-9f20-cc627a7763c1"
+      ],
+      "case_ids": [],
+      "stale": false
+    },
+    "approved_summary_id": "f1152499-bfce-4c48-9796-ac610211b7c1",
+    "summary_checksum": "5d1db73e917c9d177abaab0fa84db530b38d413b0c11b8355ff50ae223c6106a",
+    "summary_scope": {
+      "start": "2026-09-02",
+      "end": "2026-10-12",
+      "territory": "абай 1510"
+    },
+    "summary_counts": {
+      "total_messages": 4,
+      "unique_messages": 3,
+      "confirmed_groups": 1,
+      "confirmed_problems": 0
+    },
+    "browser_csv_matches_api": true,
+    "csv_rows_including_header": 7,
+    "export_columns": 20,
+    "xlsx_api_readback": "PASS",
+    "removed_appeal_retained": true,
+    "all_group_ids_counts_periods_sources_verified": 46,
+    "sqlite_integrity": "ok",
+    "prior_summary_unchanged": true,
+    "demo_gold_evaluation": {
+      "expected_cases": 23,
+      "actual_cases": 34,
+      "true_positive_pairs": 737,
+      "false_positive_pairs": 14,
+      "false_negative_pairs": 475,
+      "notice": "Synthetic corpus only; no real-world accuracy claim."
+    }
+  },
+  "security": {
+    "source_files_scanned": 84,
+    "credential_pattern_findings": [],
+    "ignore_checks": {
+      ".env": {
+        "ignored": true,
+        "rule": ".gitignore:1:.env\t.env"
+      },
+      "backend/data/district_voice.db": {
+        "ignored": true,
+        "rule": ".gitignore:19:backend/data/\tbackend/data/district_voice.db"
+      },
+      "backend/.venv/pyvenv.cfg": {
+        "ignored": true,
+        "rule": ".gitignore:7:.venv/\tbackend/.venv/pyvenv.cfg"
+      },
+      "frontend/node_modules/next/package.json": {
+        "ignored": true,
+        "rule": ".gitignore:4:node_modules/\tfrontend/node_modules/next/package.json"
+      },
+      "frontend/.next/BUILD_ID": {
+        "ignored": true,
+        "rule": ".gitignore:5:.next/\tfrontend/.next/BUILD_ID"
+      },
+      "backend/models/multilingual-e5-small/model.safetensors": {
+        "ignored": true,
+        "rule": ".gitignore:23:backend/models/\tbackend/models/multilingual-e5-small/model.safetensors"
+      },
+      "data/private/test.csv": {
+        "ignored": true,
+        "rule": ".gitignore:18:data/private/\tdata/private/test.csv"
+      }
+    },
+    "demo_rows": 180,
+    "demo_marker_all": true,
+    "demo_detected_personal_fields": [],
+    "limitations": "Pattern scan is not proof of absence; synthetic fixtures may contain fictional contacts. Git history and OS traffic capture not scanned."
+  },
+  "npm_all_dependencies": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 5,
+    "critical": 0,
+    "total": 5
+  },
+  "npm_production": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "ai": {
+    "e5": {
+      "passed": 9,
+      "total": 9,
+      "external_network_attempts": []
+    },
+    "tfidf": {
+      "passed": 9,
+      "total": 9,
+      "external_network_attempts": []
+    }
+  },
+  "browser": {
+    "production": true,
+    "csv_import": "PASS",
+    "corrupt_xlsx_error": "PASS",
+    "analysis_retry": "PASS",
+    "evidence_and_curation": "PASS",
+    "reload_persistence": "PASS",
+    "summary_edit_approval": "PASS",
+    "csv_download_verified": "PASS",
+    "registry_filters_pagination_empty": "PASS",
+    "groups_cards_table_status_filter": "PASS",
+    "backend_outage_and_retry": "PASS",
+    "mobile_dashboard_and_menu": "PASS",
+    "fresh_successful_xlsx_file_chooser": "NOT TESTED; real API and pytest checked",
+    "all_eight_curation_buttons_this_audit": "NOT TESTED in browser; all actions passed API tests"
+  },
+  "not_tested": [
+    "Real labeled corpus",
+    "Full Python vulnerability database scan",
+    "Public deployment/authentication",
+    "Load test",
+    "Clean Windows installation",
+    "Full Git history secrets scan",
+    "Desktop Excel",
+    "System-wide packet capture"
+  ],
+  "remaining_failures": [
+    "Large synthetic gold group partition differs: 34 actual vs 23 expected",
+    "Five high advisories in development ESLint/braces dependency chain",
+    "Authentication and roles absent for public deployment"
+  ],
+  "git_push": false,
+  "commits_created": false,
+  "git_head": "0ae22ad3b36169392924f5fa10172f86732e8971",
+  "branch": "feature/golos-rayona"
+}
