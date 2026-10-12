@@ -1,0 +1,751 @@
+{
+  "dataset": "Synthetic A-I, not a real-world accuracy benchmark",
+  "mode": "tfidf",
+  "network_attempts": [],
+  "total": 9,
+  "passed": 9,
+  "controls": [
+    {
+      "id": "A",
+      "title": "Разные русские формулировки одного отключения воды",
+      "expected": {
+        "case_members": [
+          [
+            "A1",
+            "A2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "A1": "Водоснабжение",
+          "A2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "A1",
+            "A2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "A2": "абай 15",
+          "A1": "абай 15"
+        },
+        "categories": {
+          "A2": "Водоснабжение",
+          "A1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "c20abe7b-2e48-4391-855b-b229863deef1",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:35.879746Z",
+        "finished_at": "2026-10-12T11:29:37.337208Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "58f44f76-776d-46a0-9949-14bb1f6afa52": "A2",
+        "c1c354e9-acdc-4428-887d-f39b5a93a197": "A1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "B",
+      "title": "Русский и казахский: одно отключение по одному адресу",
+      "expected": {
+        "case_members": [
+          [
+            "B1",
+            "B2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "B1": "Водоснабжение",
+          "B2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "B1",
+            "B2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "B2": "абай 15",
+          "B1": "абай 15"
+        },
+        "categories": {
+          "B2": "Водоснабжение",
+          "B1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "647dbe29-b716-4622-930b-108288ebb088",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:37.743680Z",
+        "finished_at": "2026-10-12T11:29:37.771342Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "21ae0c21-c75c-48ef-a2ad-7e72fb5730bd": "B2",
+        "adcb72fa-cdf1-4bab-8155-94be21cd17c8": "B1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "C",
+      "title": "Одна тема по разным адресам не доказывает одну аварию",
+      "expected": {
+        "case_members": [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "C1": "Водоснабжение",
+          "C2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "C1": "абай 15",
+          "C2": "абай 27"
+        },
+        "categories": {
+          "C1": "Водоснабжение",
+          "C2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "c2e424bf-531e-4338-a626-91dcba740d6b",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 2,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:38.105508Z",
+        "finished_at": "2026-10-12T11:29:38.123021Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "195f2f0b-c88e-4f2c-9e3e-99f5248dfc7f": "C1",
+        "40e1d68e-b0f0-4f9b-81d8-4786bac94d7d": "C2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "D",
+      "title": "Вода и уличное освещение по одному адресу",
+      "expected": {
+        "case_members": [
+          [
+            "D1"
+          ],
+          [
+            "D2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 2,
+        "categories": {
+          "D1": "Водоснабжение",
+          "D2": "Освещение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "D1"
+          ],
+          [
+            "D2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 2,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "D1": "абай 15",
+          "D2": "абай 15"
+        },
+        "categories": {
+          "D1": "Водоснабжение",
+          "D2": "Освещение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "c7b3190e-b31c-429a-a123-5f2ab381303a",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 2,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:38.460845Z",
+        "finished_at": "2026-10-12T11:29:38.477064Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "0dd53673-b8d5-4e3d-9cff-5b397bf907c1": "D1",
+        "c72bec52-e885-40ee-84fd-f3b499e426d0": "D2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "E",
+      "title": "Отключения воды с интервалом месяц: два случая, одна повторяющаяся проблема",
+      "expected": {
+        "case_members": [
+          [
+            "E1"
+          ],
+          [
+            "E2"
+          ]
+        ],
+        "recurring_problem_count": 1,
+        "categories": {
+          "E1": "Водоснабжение",
+          "E2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "E1"
+          ],
+          [
+            "E2"
+          ]
+        ],
+        "recurring_problem_count": 1,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "E1": "абай 15",
+          "E2": "абай 15"
+        },
+        "categories": {
+          "E1": "Водоснабжение",
+          "E2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "f27d2a61-3b3c-4ccd-a485-fdeb80ba442a",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 2,
+        "problem_count": 1,
+        "created_at": "2026-10-12T11:29:38.811794Z",
+        "finished_at": "2026-10-12T11:29:38.828124Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "85ff4488-bbb4-4574-8d21-4211115ce8b0": "E1",
+        "d72426f8-7397-4c0a-a704-a49c43291fb8": "E2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "F",
+      "title": "Дословная перепубликация не становится независимым доказательством",
+      "expected": {
+        "case_members": [
+          [
+            "F1",
+            "F2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "independent_evidence_count": 1,
+        "republication_required": true,
+        "categories": {
+          "F1": "Водоснабжение",
+          "F2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "F1",
+            "F2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 1,
+        "republication_required": true,
+        "uncertain_ids": [
+          "F2"
+        ],
+        "territories": {
+          "F1": "абай 15",
+          "F2": "абай 15"
+        },
+        "categories": {
+          "F1": "Водоснабжение",
+          "F2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "40f3257a-0498-419b-9d07-7d4f9a5c78b5",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 1,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:39.158826Z",
+        "finished_at": "2026-10-12T11:29:39.177496Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "57e7df52-0515-4813-917a-e26fd02c318e": "F1",
+        "808887a2-729a-494f-867b-8d1adde9df85": "F2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "G",
+      "title": "Неизвестные адреса: отдельные случаи и явная неопределённость",
+      "expected": {
+        "case_members": [
+          [
+            "G1"
+          ],
+          [
+            "G2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "uncertain_ids": [
+          "G1",
+          "G2"
+        ],
+        "unknown_territory": true,
+        "categories": {
+          "G1": "Водоснабжение",
+          "G2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "G1"
+          ],
+          [
+            "G2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [
+          "G1",
+          "G2"
+        ],
+        "territories": {
+          "G1": null,
+          "G2": null
+        },
+        "categories": {
+          "G1": "Водоснабжение",
+          "G2": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "ba2ce34f-92e2-44b2-8da6-8f8d748a0367",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 2,
+        "case_count": 2,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:39.494844Z",
+        "finished_at": "2026-10-12T11:29:39.511794Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "6e395e11-08fb-4e7a-abed-2e6e20ce8d5a": "G1",
+        "904f211b-9ae6-4c9f-b442-326ba62f2496": "G2"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "H",
+      "title": "Противоречащий адрес и восстановленная услуга не сливаются с отключением",
+      "expected": {
+        "case_members": [
+          [
+            "H1"
+          ],
+          [
+            "H2"
+          ],
+          [
+            "H3"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "uncertain_ids": [
+          "H3"
+        ],
+        "categories": {
+          "H1": "Водоснабжение",
+          "H2": "Водоснабжение",
+          "H3": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "H1"
+          ],
+          [
+            "H2"
+          ],
+          [
+            "H3"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 3,
+        "republication_required": false,
+        "uncertain_ids": [
+          "H2",
+          "H3"
+        ],
+        "territories": {
+          "H2": "абай 15",
+          "H3": "абай 15",
+          "H1": "абай 15"
+        },
+        "categories": {
+          "H2": "Водоснабжение",
+          "H3": "Водоснабжение",
+          "H1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "1ade5b2f-e3a6-48eb-9b0f-7a0f3af5d2ae",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 3,
+        "analyzed": 3,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 2,
+        "case_count": 3,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:39.956470Z",
+        "finished_at": "2026-10-12T11:29:39.977813Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "0b364d0c-7911-4cd6-bc19-91a710290bcd": "H2",
+        "47f4ca96-09b0-4d5a-ae51-c2287e0b26c4": "H3",
+        "4e64ae4b-6402-4cf0-9ba4-8dd59d3fc99e": "H1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    },
+    {
+      "id": "I",
+      "title": "Смешанный русский и казахский текст",
+      "expected": {
+        "case_members": [
+          [
+            "I1",
+            "I2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "categories": {
+          "I1": "Водоснабжение",
+          "I2": "Водоснабжение"
+        }
+      },
+      "actual": {
+        "case_members": [
+          [
+            "I1",
+            "I2"
+          ]
+        ],
+        "recurring_problem_count": 0,
+        "distinct_categories": 1,
+        "independent_evidence_count": 2,
+        "republication_required": false,
+        "uncertain_ids": [],
+        "territories": {
+          "I2": "абай 15",
+          "I1": "абай 15"
+        },
+        "categories": {
+          "I2": "Водоснабжение",
+          "I1": "Водоснабжение"
+        }
+      },
+      "failures": [],
+      "passed": true,
+      "run": {
+        "id": "e46aaff2-c2fc-42b3-afc9-08ccb5cf248f",
+        "status": "completed",
+        "mode": "tfidf",
+        "rerun_of": null,
+        "algorithm": {
+          "name": "tfidf_char",
+          "label": "TF-IDF · символьные n-граммы (резервный текстовый метод)",
+          "semantic": false,
+          "model_id": null,
+          "model_revision": null,
+          "fallback_reason": "Резервный метод выбран пользователем.",
+          "available": true,
+          "case_window_days": 3,
+          "recurrence_min_days": 7,
+          "recurrence_max_days": 90,
+          "similarity_threshold": 0.34,
+          "max_appeals": 500,
+          "score_is_probability": false
+        },
+        "total": 2,
+        "analyzed": 2,
+        "blocked": 0,
+        "error_count": 0,
+        "errors": [],
+        "uncertainties_count": 0,
+        "case_count": 1,
+        "problem_count": 0,
+        "created_at": "2026-10-12T11:29:40.461106Z",
+        "finished_at": "2026-10-12T11:29:40.477032Z",
+        "stale": false
+      },
+      "evidence_ids": {
+        "9f5a443f-e213-4efb-ac6c-504e8071c957": "I2",
+        "a5727c75-a119-42fc-bbe8-9d661f642abd": "I1"
+      },
+      "sqlite_persistence_retry": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "checks": {
+    "pytest_passed": 111,
+    "typecheck": "passed",
+    "lint": "passed",
+    "production_build": "passed"
+  },
+  "production_pages": {
+    "/": 200,
+    "/import": 200,
+    "/appeals": 200,
+    "/analysis": 200,
+    "/problems": 200,
+    "/reports": 200
+  },
+  "sqlite_integrity": "ok",
+  "foreign_key_errors": 0,
+  "preserved_modules_sha256": {
+    "backend/app/importer.py": true,
+    "backend/app/privacy.py": true,
+    "backend/app/models.py": true,
+    "backend/app/analysis_models.py": true,
+    "backend/app/ai/engine.py": true,
+    "backend/app/ai/normalization.py": true
+  },
+  "total_appeals": 186,
+  "active_cases": 43,
+  "active_problems": 1,
+  "confirmed_groups": 2,
+  "water_group": {
+    "id": "b008eb8a-ca73-499c-b6e8-8a55a1917aa6",
+    "version": 12,
+    "status": "confirmed",
+    "message_count": 14,
+    "source_count": 2,
+    "appeal_ids": [
+      "0177d52d-74d3-45ca-9090-250903bcb963",
+      "2caa69f6-8c51-49b7-bde9-3161c7313f2e",
+      "421e6816-5765-4af3-8eaf-16da4f828d68",
+      "50f6ee83-ce93-4160-a61e-3f9d3e4958e0",
+      "7b902edc-8d21-4c20-938b-e1f868bb4707",
+      "871a9a87-e3b4-40e6-bc25-65ea7ea0ed9e",
+      "9d67d413-9f94-44f7-95d2-846e825feb11",
+      "9f1b45c9-bf99-425b-8ac9-d480c3fe953d",
+      "a01d42c1-e255-490c-9ff1-3cddcfc97fdd",
+      "ad760bc4-1b83-4804-8427-b1951f18c3ac",
+      "b3d8d3ea-7fcc-464d-aca2-7d94fe808790",
+      "c439192b-55ae-4405-b24d-9f3da8badcf5",
+      "de26333c-34d7-427b-8d87-80b5ea2614e2",
+      "f9902c01-8f8d-4ac9-8e5c-bf61ff6c4613"
+    ]
+  },
+  "manual_actions_verified_in_ui": [
+    "add",
+    "edit",
+    "merge",
+    "remove",
+    "review",
+    "split"
+  ],
+  "history_events": 11,
+  "approved_summary": {
+    "id": "80b43dd4-39c0-4ef6-8673-58d6c14247d2",
+    "version": 1,
+    "approved_at": "2026-10-12T10:24:39.616507Z",
+    "checksum": "bb85a5c8ac8c266612d8ae772d6945e79b818c8f8656976e8b116a02e9f0d913"
+  },
+  "approved_snapshot_unchanged_after_group_edits_and_server_restart": true,
+  "csv_and_xlsx_downloaded_in_browser": true,
+  "export_rows_including_header": 190,
+  "export_columns": 20,
+  "responsive_reports": [
+    {
+      "css_width": 1309,
+      "document_width": 1295
+    },
+    {
+      "css_width": 391,
+      "document_width": 377
+    }
+  ],
+  "date_filter_ui_verified": {
+    "start": "2026-09-02",
+    "end": "2026-10-09",
+    "total": 172,
+    "unique": 145
+  },
+  "territory_filter_ui_verified": {
+    "territory": "абай 150",
+    "total": 26,
+    "unique": 18
+  },
+  "limitations": [
+    "local_demo_operator_without_auth",
+    "500_appeal_analysis_limit",
+    "group_curation_not_carried_to_new_analysis",
+    "nlp_errors_on_synthetic_gold",
+    "unmeasured_real_world_accuracy"
+  ]
+}
